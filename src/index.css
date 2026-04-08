@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background font-sans text-foreground antialiased;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+
+/* Game components may use these Next.js-like CSS classes */
+.text-muted-foreground { @apply text-zinc-400; }
+.text-primary-foreground { @apply text-white; }
+.bg-muted { @apply bg-muted; }
+.border-border { @apply border-border; }
